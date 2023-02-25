@@ -10,8 +10,7 @@ class HomeController extends Controller
     {
         if($request->session()->has('id'))
         {
-            $level = $request->session()->get('level');
-            return view('page.home')->with('level', $level);
+            return view('page.home');
         }
         else
         {

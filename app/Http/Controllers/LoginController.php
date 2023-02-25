@@ -44,7 +44,7 @@ class LoginController extends Controller
 
             if(isset($siswa))
             {
-                $request->session()->put('id', $siswa->id_siswa);
+                $request->session()->put('id', $siswa->nisn);
                 $request->session()->put('level', 'siswa');
 
                 return redirect()->route('home.index');
