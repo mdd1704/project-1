@@ -10,7 +10,7 @@ class LoginController extends Controller
 {
     public function login(Request $request)
     {
-        if($request->session()->has('id_petugas'))
+        if($request->session()->has('id'))
         {
             return redirect()->route('home.index');
         }
